@@ -4,12 +4,12 @@ import logo from "@/assets/logo.png";
 const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
-      <div className="container mx-auto max-w-7xl flex items-center justify-between h-16 px-4">
+      <div className="container mx-auto max-w-7xl flex items-center justify-between h-20 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="JustCrop" className="h-8" />
+          <img src={logo} alt="JustCrop" className="h-14" />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex flex-1 items-center justify-center gap-10">
           <Link to="/features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Features
           </Link>
@@ -18,6 +18,9 @@ const Navbar = () => {
           </Link>
           <Link to="/api-docs" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             API
+          </Link>
+          <Link to="/history" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            History
           </Link>
         </nav>
 
