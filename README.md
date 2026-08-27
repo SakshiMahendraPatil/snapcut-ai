@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+# SnapCut AI
 
-## Project info
+SnapCut AI is a web app that removes the background from images quickly and efficiently. Upload a photo and get a clean, transparent-background version back — no manual masking or editing software required.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- **AI background removal** — upload an image and instantly remove its background
+- **Modern UI kit** — built on [shadcn/ui](https://ui.shadcn.com/) and Radix UI primitives for accessible, composable components (dialogs, dropdowns, tabs, accordions, tooltips, and more)
+- **Client-side routing** — powered by React Router
+- **Data fetching & caching** — via TanStack Query
+- **Form handling & validation** — React Hook Form + Zod schemas
+- **Styling** — Tailwind CSS with `tailwindcss-animate` and the Typography plugin
+- **Charts** — data visualization with Recharts
+- **Dark mode support** — via `next-themes`
+- **Type-safe** — written in TypeScript throughout
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Framework:** React 18 + Vite
+- **Language:** TypeScript
+- **UI Components:** shadcn/ui, Radix UI
+- **Styling:** Tailwind CSS
+- **Routing:** React Router DOM
+- **State/Data:** TanStack Query
+- **Forms:** React Hook Form, Zod
+- **Testing:** Vitest, Testing Library
+- **Linting:** ESLint
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- [Node.js](https://nodejs.org/) (v18 or later recommended)
+- npm
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone https://github.com/SakshiMahendraPatil/snapcut-ai.git
+cd snapcut-ai
 
-Follow these steps:
+# Install dependencies
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Running Locally
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+This starts the Vite dev server (default: `http://localhost:5173`).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Building for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+For a development-mode build:
 
-## What technologies are used for this project?
+```bash
+npm run build:dev
+```
 
-This project is built with:
+### Testing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm run test        # run tests once
+npm run test:watch  # run tests in watch mode
+```
 
-## How can I deploy this project?
+### Linting
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+```bash
+npm run lint
+```
 
-## Can I connect a custom domain to my Lovable project?
+## Project Structure
 
-Yes, you can!
+```
+snapcut-ai/
+├── src/
+│   ├── components/   # Reusable UI components (shadcn/ui-based)
+│   ├── pages/          # Route-level components
+│   ├── hooks/          # Custom React hooks
+│   └── lib/             # Utilities and helpers
+├── public/             # Static assets
+├── index.html
+├── vite.config.ts
+├── tailwind.config.ts
+└── tsconfig.json
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+
